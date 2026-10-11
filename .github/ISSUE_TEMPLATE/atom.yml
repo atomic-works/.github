@@ -1,0 +1,14 @@
+name: 'Atom'
+description: 'Smallest unit of work.'
+type: Atom
+body:
+  - type: markdown
+    attributes:
+      value: 'Atoms track the smallest unit of work, and the owning request contains the requested work information. Atoms only need a title and a label to accomplish their purpose.'
+  - type: checkboxes
+    attributes:
+      label: 'Label'
+      description: 'Please assign the proper label to describe this work by selecting it on the right. The options are: `development`, `automation`, `artifacts`, `documentation`, and `project-management`.'
+      options:
+        - label: 'I have assigned a proper work label to this issue.'
+          required: true

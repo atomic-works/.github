@@ -1,0 +1,35 @@
+name: 'Fix Request'
+description: 'Request fixing a mistake.'
+type: Fix
+body:
+  - type: markdown
+    attributes:
+      value: 'Write a summary of the request. Explain the problem, the solution, how you reached this solution, and if there are alternatives.'
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: 'Summary'
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: 'Steps to Reproduce'
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: 'Acceptance Criteria'
+  - type: markdown
+    attributes:
+      value: 'List all links helpful for others to understand your request.'
+  - type: textarea
+    attributes:
+      label: 'Resource Links'
+  - type: checkboxes
+    attributes:
+      label: 'Label'
+      description: 'Please assign the proper label to describe this work by selecting it on the right. The options are: `development`, `automation`, `artifacts`, `documentation`, and `project-management`.'
+      options:
+        - label: 'I have assigned a proper work label to this issue.'
+          required: true
